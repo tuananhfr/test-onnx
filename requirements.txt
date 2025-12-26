@@ -1,0 +1,21 @@
+# ONNX-based backend requirements (CPU only)
+# Sử dụng ONNX Runtime cho inference - nhanh và nhẹ hơn PyTorch
+
+# Web Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.5.3
+PyYAML==6.0.1
+aiohttp==3.9.1
+python-multipart==0.0.6
+
+# Computer Vision
+opencv-python==4.9.0.80
+numpy==1.26.3
+
+# ONNX Runtime (CPU-optimized)
+onnxruntime>=1.16.0
+
+# Optional: Optimized ONNX Runtime với Intel MKL (nhanh hơn trên Intel CPU)
+# Uncomment nếu CPU của bạn là Intel
+# onnxruntime-extensions>=0.9.0
